@@ -1,0 +1,72 @@
+/*  
+1. put kitty inside h1 box along with the Title.  VVV
+2. put a yellow box around the list of markets. VVV
+3. Float two quotes and design them. (put a width on first) VVV
+*/
+body {
+    background-color: grey;
+    color: white;
+  }
+  blockquote {
+      color: blue;
+      width: 25%;
+      border: 4px dotted orange;
+      font-family: 'Franklin Gothic Medium';
+      padding: 1rem;
+      float: none;
+      margin: 0 auto;
+  }
+  ol {
+      color: green;
+  }
+  cite {
+      color: black;
+  }
+  a:link {
+      color: blue;
+      font-weight: bold;
+  }
+  a:visited {
+      color: lightgreen;
+      text-decoration: none;
+  }
+  a:hover {
+      font-size: 2rem;
+      background-color: orangered;
+  }
+  h1 {
+      margin:
+      color: red;
+      text-align: center;
+      border: 4px firebrick dashed;
+      margin: 0 auto;
+  }
+  h1:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+  
+  img {
+      border: 2px dotted green;
+  }
+  .producers {
+      color: green;
+      font-weight: bolder;
+  }
+  strong {
+      color: green;
+      font-size: larger;
+  }
+  #boldunderline {
+      font-weight: bolder;
+      text-decoration: underline;
+  }
+  
+  .floatright {
+    float: right;
+  }
+  
+  ol {
+        border: 3px solid yellow;
+  }
