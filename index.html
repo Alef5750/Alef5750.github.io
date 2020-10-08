@@ -1,89 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My first web page</title>
-</head>
-<body>
-    <h1>All About Alef & Esther Lewitt</h1>
-
-    <p>Please visit my <a href="hobbies.html"> hobbies page.</a></p>
-
-    <p>Hello World! My name is Alef. I'm learning coding! I'm married to Esther. She's wonderful.</p>
-
-    <p>Here is a picture of a cute kitten, because this page is boring without a photo.</p>
-
-    <img src="http://placekitten.com/200/300" alt="Cute kitten." title="Cute kitten.">
+  <head>
+    <title>ITC Precourse</title>
+    <head>
+    <link href="./style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section>
+      <div class="page-wrapper">
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        
+        <div id="idCard" class="card" onclick="fade()">
+            <img
+            id="profile-image"
+            src="alefProfile.png"
+            alt="Alef Lewitt"
+            class="profile-image"/>
+          <div class="Titles">
+            <h1 id="my-name">
+              Alef Lewitt
+            </h1>
+            <h2>ITC Fullstack Development</h2>
+          </div>
+          
+            <ul class="socialmedia">
+              <li><a href="https://www.linkedin.com/in/alef-lewitt/" alt="My LinkedIn Profile" title="My Linkedi\In Profile" target="_blank"><div style="width: 5rem; text-align: center; font-size: 80%;"><img src="linkedin.png">LinkedIn</a></li>
+              <li><a href="https://github.com/Alef5750" alt="My GitHub Profile" title="My GitHub Profile" target="_blank"><div style="width: 5rem; text-align: center; font-size: 80%;"><img src="github.png">GitHub</a></li>
+              <li><a href="https://stackoverflow.com/users/14368848/alef-lewitt" alt="My StackOverflow Profile" title="My StackOverflow Profile" target="_blank"><div style="width: 5rem; text-align: center; font-size: 80%;"><img src="stackoverflow.png">StackOverflow</a></li>
+            </ul>
+        </div>
+      </div>
+      <div>&#169; Israel Tech Challenge</div>
+    </section>
     
-    <p>I love g'shmake niggunim and cheesecake, with some chocolate liquer with cream. Esther likes good books, poetry, and wishes to travel one day, visiting the Northern Lights in Iceland.</p>
+    <script src="portfolio.js"></script>
+  </body>
 
-    <h2>Esther's wonderful traits</h2>
+  <footer>
     <ul>
-        <li>Wisdom</li>
-        <li>Kindness</li>
-        <li>Commitment</li>
-        <li>Love</li>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./contact.html">Contact</a></li>
     </ul>
-    <h3>How to Make a Peanut butter and Jelly Sandwitch</h3>
-    <ol>
-        <li>Get a jar of peanut butter, jelly, and bread.</li>
-        <li>Open the jar of peanut butter.</li>
-        <li>Take a knife, and while holding the handle, insert the blade into the jar of peanut butter.</li>
-        <li>Using the blade, remove peanut butter from its jar, and place it on a slice of bread.</li>
-        <li>Spread the peanut butter until it has covered the entire surface of the slice.</li>
-        <li>After wiping the blade clean on the second slice, do the same with the jelly.</li>
-        <li>Place the spreaded sides of the slices on one another.</li>
-        <li>Wash netilat yadayim</li>
-        <li>Say a bracha of "hamotzi".</li>
-        <li>B'te'avon!</li>
-    </ol>
-    <h2>My Fine Links</h2>
-
-    <p>My favorite website is <a href="http://www.alhatorah.org" target=_"blank">Al HaTorah</a></p>
-</body>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My first web page</title>
-</head>
-<body>
-    <h1>All About Alef & Esther</h1>
-
-    <p>Please visit my <a href="hobbies.html"> hobbies page.</a></p>
-
-    <p>Hello World! My name is Alef. I'm learning coding! I'm married to Esther. She's wonderful.</p>
-
-    <p>Here is a picture of a cute kitten, because this page is boring without a photo.</p>
-
-    <img src="http://placekitten.com/200/300" alt="Cute kitten." title="Cute kitten.">
-    
-    <p>I love g'shmake niggunim and cheesecake, with some chocolate liquer with cream. Esther likes good books, poetry, and wishes to travel one day, visiting the Northern Lights in Iceland.</p>
-
-    <h2>Esther's wonderful traits</h2>
-    <ul>
-        <li>Wisdom</li>
-        <li>Kindness</li>
-        <li>Commitment</li>
-        <li>Love</li>
-    </ul>
-    <h3>How to Make a Peanut butter and Jelly Sandwitch</h3>
-    <ol>
-        <li>Get a jar of peanut butter, jelly, and bread.</li>
-        <li>Open the jar of peanut butter.</li>
-        <li>Take a knife, and while holding the handle, insert the blade into the jar of peanut butter.</li>
-        <li>Using the blade, remove peanut butter from its jar, and place it on a slice of bread.</li>
-        <li>Spread the peanut butter until it has covered the entire surface of the slice.</li>
-        <li>After wiping the blade clean on the second slice, do the same with the jelly.</li>
-        <li>Place the spreaded sides of the slices on one another.</li>
-        <li>Wash netilat yadayim</li>
-        <li>Say a bracha of "hamotzi".</li>
-        <li>B'te'avon!</li>
-    </ol>
-    <h2>My Fine Links</h2>
-
-    <p>My favorite website is <a href="http://www.alhatorah.org" target=_"blank">Al HaTorah</a></p>
-</body>
+    <br>
+    <p>This page was built with [0], [1], and [2]</p>
+  </footer>
 </html>
