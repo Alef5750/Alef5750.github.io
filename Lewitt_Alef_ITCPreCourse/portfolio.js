@@ -1,4 +1,4 @@
-const GITHUB_URL = "https://github.com/Alef5750";
+const GITHUB_URL = "https://api.github.com/users/Alef5750";
 
 fetch(GITHUB_URL)
   .then(function (response) {
