@@ -27,6 +27,7 @@ body {
 .card {
   align-items: center;
   background-image: url(blueback.jpeg);
+  background-size: 100%;
   /* background-image: linear-gradient(to bottom right, white, lightgray); */
   border-radius: 1rem;
   -webkit-box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
@@ -37,10 +38,12 @@ body {
   justify-content: center;
   margin: 50px;
   padding: 50px;
-  transition: opacity 2s;
+  transition: padding 4s, background-image 4s;
 }
 .card:hover {
-  transform: scale(1.16, 1.16);
+  transform: skewY(5deg);
+  cursor: pointer;
+  opacity: 90%;
 }
 
 .nav-item {
@@ -57,6 +60,7 @@ body {
   display: flex;
   justify-content: center;
   background-color: #010626;
+  transition: background-color 4s;
 }
 
 .profile-image {
@@ -75,8 +79,13 @@ h1 {
   text-align: center;
   font-size: 1.8rem;
 }
+#my-name {
+  color: black;
+  transition: color 4s;
+}
 h2 {
   color: gray;
+  transition: color 4s;
 }
 .Titles {
   font-family: "Black Ops One", cursive;
@@ -117,7 +126,7 @@ nav li a:hover {
   border-radius: 1rem;
 }
 .Titles {
-  margin-top: none;
+  margin-top: 0;
 }
 #profile-image {
   margin-bottom: 0;
@@ -128,6 +137,7 @@ nav li a:hover {
   list-style-type: none;
   display: flex;
 }
+
 .socialmedia li {
   margin: 10px;
 }
@@ -142,8 +152,24 @@ nav li a:hover {
   font-family: "Roboto", sans-serif;
   color: gray;
 }
-.socialmedia a:visited {
+/*.socialmedia a:visited {
+  color: purple;
+  transition: color 4s;
+}*/
+#linkedin,
+#github,
+#stack {
   color: black;
+  transition: color 4s;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: white;
 }
 footer li {
   display: inline-block;
@@ -156,9 +182,16 @@ footer a {
   color: black;
   padding: 0;
   margin: 0;
+  color: white;
+}
+footer a:hover {
+  color: #010626;
 }
 footer {
   background-color: gray;
   padding: 0;
   margin: 0;
+  bottom: 0;
+  color: white;
+  font-family: "Roboto", sans-serif;
 }

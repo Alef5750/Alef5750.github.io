@@ -56,7 +56,6 @@
         margin: 3rem 9rem;
         padding: 0 5rem;
         background-color: #010626;
-        width: 65%;
       }
       h1 {
         text-align: center;
@@ -106,25 +105,39 @@
       #prevBtn {
         visibility: hidden;
       }
-      footer {
-        background-color: gray;
+      footer ul {
+        list-style-type: none;
         padding: 0;
         margin: 0;
-        position: absolute;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        text-align: center;
+        color: white;
       }
       footer li {
-          display: inline-block;
-          text-align: center;
-          padding: 0;
-          margin: 0;
-        }
+        display: inline-block;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+      }
       footer a {
         text-decoration: none;
         color: black;
         padding: 0;
         margin: 0;
+        color: white;
       }
-      
+      footer a:hover {
+        color: #010626;
+      }
+      footer {
+        background-color: gray;
+        padding: 0;
+        margin: 0;
+        bottom: 0;
+        color: white;
+        font-family: "Roboto", sans-serif;
+      }
     </style>
   </head>
   <body>
@@ -234,55 +247,59 @@
             aria-hidden="false"
             tabindex="0"
           ></iframe>
-<div class="buttons">
-<button id="prevBtn" onclick="previousCity()">&mapstoleft; Previous</button>
-<button id="nextBtn" onclick="nextCity()">Next &#8614;</button>
 
-</div>
-<script>
-    homes = [
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d965304.2829380587!2d-122.33399981737308!3d37.37126993431989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb07b9dba1c39%3A0xe1ff55235f576cf!2sPalo%20Alto%2C%20CA%2C%20USA!5e0!3m2!1sen!2sil!4v1601974138929!5m2!1sen!2sil", 
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1890618.977090647!2d-77.40764050707294!3d38.89867269880922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c803aed6f483b7%3A0x44896a84223e758!2sBaltimore%2C%20MD%2C%20USA!5e0!3m2!1sen!2sil!4v1601974265074!5m2!1sen!2sil", 
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2069652.6764211182!2d34.29535160640431!3d31.575004923812376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502d7d634c1fc4b%3A0xd96f623e456ee1cb!2sJerusalem!5e0!3m2!1sen!2sil!4v1601974353556!5m2!1sen!2sil", 
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d273972.00182792556!2d35.022007918588294!3d31.6151431997198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502debdde0fcf05%3A0xc02a27858d74aca8!2sElazar!5e0!3m2!1sen!2sil!4v1601974446294!5m2!1sen!2sil",
+          <div class="buttons">
+            <button id="prevBtn" onclick="previousCity()">
+              &mapstoleft; Previous
+            </button>
+            <button id="nextBtn" onclick="nextCity()">Next &#8614;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      homes = [
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d965304.2829380587!2d-122.33399981737308!3d37.37126993431989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb07b9dba1c39%3A0xe1ff55235f576cf!2sPalo%20Alto%2C%20CA%2C%20USA!5e0!3m2!1sen!2sil!4v1601974138929!5m2!1sen!2sil",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1890618.977090647!2d-77.40764050707294!3d38.89867269880922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c803aed6f483b7%3A0x44896a84223e758!2sBaltimore%2C%20MD%2C%20USA!5e0!3m2!1sen!2sil!4v1601974265074!5m2!1sen!2sil",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2069652.6764211182!2d34.29535160640431!3d31.575004923812376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502d7d634c1fc4b%3A0xd96f623e456ee1cb!2sJerusalem!5e0!3m2!1sen!2sil!4v1601974353556!5m2!1sen!2sil",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d273972.00182792556!2d35.022007918588294!3d31.6151431997198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502debdde0fcf05%3A0xc02a27858d74aca8!2sElazar!5e0!3m2!1sen!2sil!4v1601974446294!5m2!1sen!2sil",
       ];
-    
-    let currentCity = 0;
-    prevBtn = document.getElementById("prevBtn");
-    nextBtn = document.getElementById("nextBtn")
 
-    function nextCity() {
-    if (currentCity< homes.length-1) {
-    currentCity = currentCity + 1;
-    document.getElementById('maps').src = homes[currentCity]
-    document.getElementById("prevBtn").style.visibility = "visible";
-    } 
-    
-    if (currentCity === homes.length-1) {
-      document.getElementById("nextBtn").style.visibility = "hidden";
-    }
-}
-    function previousCity() {
-      if (currentCity>0) {
-      currentCity = currentCity - 1;
-      document.getElementById('maps').src = homes[currentCity]
-      document.getElementById("nextBtn").style.visibility = "visible";
-      } 
-      if (currentCity === 0) {
-        document.getElementById("prevBtn").style.visibility = "hidden";
+      let currentCity = 0;
+      prevBtn = document.getElementById("prevBtn");
+      nextBtn = document.getElementById("nextBtn");
+
+      function nextCity() {
+        if (currentCity < homes.length - 1) {
+          currentCity = currentCity + 1;
+          document.getElementById("maps").src = homes[currentCity];
+          document.getElementById("prevBtn").style.visibility = "visible";
+        }
+
+        if (currentCity === homes.length - 1) {
+          document.getElementById("nextBtn").style.visibility = "hidden";
+        }
       }
-    }
-</script>
+      function previousCity() {
+        if (currentCity > 0) {
+          currentCity = currentCity - 1;
+          document.getElementById("maps").src = homes[currentCity];
+          document.getElementById("nextBtn").style.visibility = "visible";
+        }
+        if (currentCity === 0) {
+          document.getElementById("prevBtn").style.visibility = "hidden";
+        }
+      }
+    </script>
 
-        </body>
-        <footer id="footer">
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-          </ul>
-          <br>
-          <p>This page was built with [0], [1], and [2]</p>
-        </footer>
-        </html>
-        
+    <footer id="footer">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+      <script src="portfolio.js"></script>
+    </footer>
+  </body>
+</html>
