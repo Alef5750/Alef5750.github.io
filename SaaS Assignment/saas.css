@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #e5e5e5;
+  border: 2px dotted gray;
+  width: 1440px;
+  height: 850px;
+}
+.thepage {
+  display: flex;
+}
+.side-nav {
+  width: 256px;
+  height: 850px;
+  background-color: white;
+  box-shadow: 4px 4px 4px;
+}
+
+/* non-nav - E/T to the right of side-nav */
+.search-bar {
+  width: 1184px;
+  height: 60px;
+  background-color: white;
+  box-shadow: 4px 4px 4px 4px;
+  margin-left: 10px;
+  display: block;
+}
+.all-rectangles {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.box {
+  /* all the white boxes*/
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 4px 4px 4px;
+}
+.rectangle1 {
+  width: 635px;
+  height: 718px;
+  margin: 36px;
+}
+
+.rect1 {
+  width: 587px;
+  height: 126px;
+  border: 1px solid brown;
+}
+.deals {
+  width: 445px;
+  height: 344px;
+  margin: 36px;
+}
+.tasks {
+  width: 445px;
+  height: 344px;
+  margin: 36px;
+}
